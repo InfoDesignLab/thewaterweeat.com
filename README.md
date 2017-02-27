@@ -9,6 +9,12 @@ cd src
 php -S localhost:8000
 ```
 
+## Build
+
+```
+./build.sh
+```
+
 ## Tech stack
 
 - [jquery](https://github.com/jquery/jquery)
