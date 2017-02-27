@@ -1,0 +1,31 @@
+/* humanstxt.org */
+
+      __               _ ___            
+     / /_  ____ ______(_) (_) _________ 
+    / __ \/ __ `/ ___/ / / / / ___/ __ \
+   / /_/ / /_/ (__  ) / / /_/ /__/ /_/ /
+  /_.___/\__,_/____/_/_/_/(_)___/\____/ 
+                                        
+
+
+/* BASILI.CO */
+  Site: basili.co
+  Twitter: basilico_int
+  Facebook: basilico.interactive
+  Location: Brescia - IT
+
+
+/* TEAM */
+
+  Web Developer: Valerio Capogna
+  Twitter: capognaValerio
+
+  Web Designer: Ivan Capelli
+
+  Project Manager: Michele Gallina
+  Twitter: mikkimikkis
+
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Third-party: prefixfree, jquery, svg, html5shim

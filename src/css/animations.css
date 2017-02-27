@@ -1,0 +1,79 @@
+/* INTRO ANIMATION: LITTLE WAVES ON START */
+
+#intro .drop-graph span{ transition: all 1s ease-in-out; }
+#drops-wall .drops-row .blue-bg{ transition: all 1.2s ease; }
+#drops-wall .drops-counter .counter span{ transition: all 1s ease-in-out; transition-delay: 0.3s; }
+.deep-sea{ transition: all 1s ease; }
+
+@keyframes dropWave
+{
+  0%   {background-position: 0px 0px;}
+100%  {background-position: 1930px 0px;}
+}
+
+@-moz-keyframes dropWave
+{
+  0%   {background-position: 0px 0px;}
+100%  {background-position: 1930px 0px;}
+}
+
+@-webkit-keyframes dropWave
+{
+  0%   {background-position: 0px 0px;}
+100%  {background-position: 1930px 0px;}
+}
+
+.deep-sea .wave{ animation: dropWave 2.5s infinite linear; } 
+
+/*STATS*/
+
+@keyframes statsRotate
+{
+  0% {transform: rotate3d(1,-1,1,0deg);}
+50% {transform: rotate3d(1,-1,1,180deg);}
+100% {transform: rotate3d(1,-1,1,360deg);}
+}
+
+#stats .content { perspective: 980px; }
+#stats .report .istogram{
+  transform: rotateX(0deg);
+  transition: all 0.3s linear;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+#stats .report .istogram.hide{ transform: rotateX(91deg); }
+
+/*INVISIBLE PARTS*/
+
+#stats .invisible-parts .zoom{
+  transform: rotateX(-91deg);
+  transition: all 0.3s linear;  
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+#stats .invisible-parts .zoom.show{ transform: rotateX(0deg); }
+#stats .invisible-parts .zoom .resume .text-container{ transition: all 0.1s ease; }
+
+#svg-water{
+  position: relative;
+  transition: transform 1s ease;
+  transform-style: flat;
+  transform: scale(1,1) translate3d(0,0,0);
+}
+
+#svg-water.zoom1{
+  transform-origin: 99.1% 99.1%;
+  transform: scale(5.5,5.5) !important;
+}
+
+#svg-water.zoom2{
+  transform-origin: 99.5% 100%;
+  transform: scale(2.5,2.5) !important;
+}
+
+#svg-water.zoom3{
+  transform-origin: 100% 100%;
+}
+

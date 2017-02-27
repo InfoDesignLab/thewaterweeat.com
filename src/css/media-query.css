@@ -1,0 +1,13 @@
+@media (min-width: 0px) and (max-width: 1024px) { 
+  
+ body{ overflow-x: hidden; }
+  
+  #intro .drop-graph{background:none;}
+
+  #discover .box.grains,
+  #discover .box.hay,
+  #discover .box.cow{
+    left: 60px;
+  }
+  
+}

@@ -1,0 +1,226 @@
+img{border:0;}
+a{outline:0;}
+
+.static-wave{
+  position: relative;
+  background-position: 0px 0px;
+  background-repeat: repeat-x
+}
+
+.static-wave.blue{ height: 257px; }
+.static-wave.gray{ height: 75px; }
+.static-wave.blue.top{ background-image: url(../static/static-bg-wave-large.png); margin-bottom: -4px;  }
+.static-wave.blue.bottom{ background-image: url(../static/static-bg-wave-large-flip.png); margin-top: -10px;}
+.static-wave.gray.top{ background: url(../static/static-gray-wave.png); }
+.static-wave.blue.bottom .blue-block{
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  height: 10px;
+  width: 100%;
+  z-index: 9999;
+  background: #04b5ef;
+  border: 1px solid #04b5ef;
+}
+
+/*********/
+#static-intro{ position: relative; }
+#static-intro .container{
+  position: relative;  
+  height: 360px;
+  padding-top: 10%;
+  background: #fff url(../static/virtual-static-01.gif) no-repeat center center;
+}
+
+/*********/
+#static-drops-wall{
+  position: relative;
+  height: 2510px;
+  background: #fff url(../static/virtual-static-02.gif) no-repeat top center;
+}
+
+/*********/
+#static-solution .container{
+  position: relative;
+  height: 1078px;
+  background: #04b5ef url(../static/virtual-static-03.gif) no-repeat top center;
+}
+#static-solution .static-wave.top{ background-color: #fff; }
+#static-solution .static-wave.bottom{ background-color: #fbf9f5; }
+
+/*********/
+
+#static-house{ position: relative; }
+#static-house .house-1{
+  position: relative;
+  height: 714px;
+  background: #fbf9f5 url(../static/static-house-1.jpg) no-repeat top center;
+}
+#static-house .house-2{
+  position: relative;
+  height: 764px;
+  background: #fbf9f5 url(../static/static-house-2.jpg) no-repeat top center;
+}
+
+
+/*********/
+#static-graph{ position: relative; }
+#static-graph .container{
+  position: relative;
+  height: 942px;
+  background: #fbf9f5 url(../static/static-graph.jpg) no-repeat top center;
+}
+
+/*********/
+#static-cubes{ position: relative; }
+#static-cubes .container{
+  position: relative;
+  height: 3391px;
+  background: #fbf9f5 url(../static/virtual-static-06.gif) no-repeat top center;
+}
+
+/*********/
+#static-tony-allan .container{
+  position: relative;
+  height: 454px;
+  background: #04b5ef url(../static/virtual-static-07.gif) no-repeat top center;
+}
+#static-tony-allan .static-wave.top{ background-color: #fbf9f5; }
+#static-tony-allan .static-wave.bottom{ background-color: #fff; }
+
+/*********/
+#static-discover{ position: relative; background-color: #fff;}
+#static-discover .beef{
+  position: relative;
+  height: 883px;
+  background: url(../static/virtual-extra-01.jpg) no-repeat top center;
+}
+#static-discover .grains{
+  position: relative;
+  height: 672px;
+  background: url(../static/virtual-extra-02.jpg) no-repeat top center;
+}
+#static-discover .hay{
+  position: relative;
+  height: 629px;
+  background: url(../static/virtual-extra-03.jpg) no-repeat top center;
+}
+#static-discover .stats{
+  position: relative;
+  height: 1249px;
+  background: url(../static/virtual-static-09.gif) no-repeat top center;
+}
+#static-discover .kilo{
+  position: relative;
+  height: 865px;
+  background: url(../static/virtual-static-10.jpg) no-repeat top center;
+}
+
+/*********/
+#static-bottles-wall{
+  position: relative ;
+  background-color: #fbf9f5;
+}
+#static-bottles-wall .static-wave.gray.top{ background-color: #fff; }
+#static-bottles-wall .first-part{
+  position: relative;
+  height: 1332px;
+  background: #fbf9f5 url(../static/virtual-static-11.gif) no-repeat top center;
+}
+#static-bottles-wall .second-part{
+  position: relative;
+  height: 1681px;
+  background: #fbf9f5 url(../static/virtual-static-12.gif) no-repeat top center;
+}
+#static-bottles-wall .third-part{
+  position: relative;
+  height: 2358px;
+  background: #fbf9f5 url(../static/virtual-static-13.gif) no-repeat top center;
+}
+
+/*********/
+#static-istogram{
+  position: relative ;
+  background-color: #fbf9f5;
+}
+#static-istogram .container{
+  position: relative;
+  height: 1486px;
+  background: #fbf9f5 url(../static/virtual-static-14.gif) no-repeat top center;
+}
+
+/*********/
+#static-help{ position: relative; }
+#static-help .container{
+  position: relative;
+  height: 784px;
+  background: #04b5ef url(../static/virtual-static-15.gif) no-repeat top center;
+}
+#static-help .static-wave.top{ background-color: #fbf9f5; }
+#static-help .static-wave.bottom{ background-color: #fbf9f5; }
+
+/*********/
+#static-end{ position: relative; }
+#static-end .first-part{
+  position: relative; 
+  height: 1029px;
+  background: #fbf9f5 url(../static/virtual-static-16.gif) no-repeat top center;
+}
+#static-end .second-part{
+  position: relative; 
+  height: 774px;
+  background: #fbf9f5 url(../static/virtual-static-17.gif) no-repeat top center;
+}
+#static-end .third-part{
+  position: relative; 
+  height: 1725px;
+  background: #fbf9f5 url(../static/virtual-static-18.gif) no-repeat top center;
+}
+
+/*********/
+#static-share{ 
+  position: relative; 
+  background: #fbf9f5;
+  height: 220px;
+}
+
+#static-share .container{
+  position: relative;
+  margin: 0 auto;
+  width: 890px;
+  padding-bottom: 80px;
+}
+
+#static-share .item{
+  position: relative;
+  width: 140px;
+  height: 138px;
+  overflow: hidden;
+  float: left;
+  margin-left: 30px;
+  background-position: 0px 0px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+#static-share .item span{ display: none; }
+#static-share .item:hover{
+  background-position: 0px -138px;
+}
+
+#static-share .item.facebook{ background-image: url(../images/share-facebook.png); }
+#static-share .item.twitter{ background-image: url(../images/share-twitter.png); }
+#static-share .item.pinterest{ background-image: url(../images/share-pinterest.png); }
+#static-share .item.g-plus{ background-image: url(../images/share-google-plus.png); }
+#static-share .item.email{ background-image: url(../images/share-email.png); }
+
+/*********/
+#static-credits{ position: relative; }
+#static-credits .container{
+  position: relative;
+  height: 460px;
+  background-color: #04b5ef;
+  color: #fff;
+  
+}
+#static-credits .static-wave.top{ background-color: #fbf9f5; }
