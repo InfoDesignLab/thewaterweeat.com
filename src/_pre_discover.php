@@ -11,16 +11,11 @@
   <div class="wave-top"></div>
   <div class="container bg-blue">
     <div class="content">
-      <p class="txt-justify">
-        We call this invisible water <b>Virtual Water</b>, a term coined<br/>
-        by water guru Prof. Tony Allan. The concept of virtual water<br/>
-        helps us realize how much water is needed to produce the<br/>
-        goods we use and the food we eat.
-      </p>
+      <p data-i18n class="txt-justify">We call this invisible water <b>Virtual Water</b>, a term coined<br>by water guru Prof. Tony Allan. The concept of virtual water<br>helps us realize how much water is needed to produce the<br>goods we use and the food we eat.</p>
       <br/>
       <br/>
       <br/>
-      <p class="txt-center lets-discover"><b>Let's discover why it is invisible.</b></p>
+      <p class="txt-center lets-discover"><b data-i18n>Let's discover why it is invisible.</b></p>
     </div>
   </div>
   <div class="wave-bottom"></div>

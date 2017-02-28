@@ -1,9 +1,8 @@
 # Next steps
 
-- Use https://github.com/wikimedia/jquery.i18n check if it's an appropriate solution
+- Implement language selector
 - Update meta properties for new domain
 - Use proper i18n markup https://webmasters.googleblog.com/2011/12/new-markup-for-multilingual-content.html
-- Implement language selector
 
 # Maybe for later
 
