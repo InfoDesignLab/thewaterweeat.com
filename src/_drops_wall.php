@@ -3,8 +3,8 @@
     <div class="drops-container">
       <div class="drops-row">
         <div class="gray-cover"></div>
-        <div class="group"></div>            
-        <div class="blue-bg"></div>            
+        <div class="group"></div>
+        <div class="blue-bg"></div>
         <div class="litre"><span>40</span></div>
       </div>
     </div>
@@ -12,16 +12,9 @@
 
   <div class="drops-counter">
     <div class="content pause">
-      <div class="counter italic bold litres">
-        <span>Yes, </span>
-        <span>you </span>
-        <span>eat </span>
-        <span class="count">0 litres </span>
-        <span>of </span>
-        <span>water </span>          
-      </div>
-      <h1>everyday.</h1>
-    </div>        
+      <div data-i18n class="counter italic bold litres"><span>Yes, </span><span>you </span><span>eat </span><span class="count">0 litres </span><span>of </span><span>water </span></div>
+      <h1 data-i18n>everyday.</h1>
+    </div>
   </div>
 
   <div class="drops-paragraph">
@@ -31,22 +24,15 @@
     </div>
     <div class="bg-blue">
       <div class="content">
-        <p>
-          Eating water might sound strange, but you are about to discover that actually you eat loads 
-          of it, you are addicted to it, <b>and you don’t know it.</b>
-        </p>
-        <p>
-          An understanding of our water consumption can help us provide a solution to one of our 
-          most pressing problems: <br/>
-          <b>making sure there is enough water for everybody on the planet</b>.
-        </p>          
+        <p data-i18n>Eating water might sound strange, but you are about to discover that actually you eat loads of it, you are addicted to it, <b>and you don’t know it.</b></p>
+        <p data-i18n>An understanding of our water consumption can help us provide a solution to one of our most pressing problems:<br><b>making sure there is enough water for everybody on the planet.</b></p>
         <div class="solution">
-          <p class="show"><b>You</b> can be <b>part</b> of that</p>
-          <h1>solution</h1>
+          <p data-i18n class="show"><b>You</b> can be <b>part</b> of that</p>
+          <h1 data-i18n>solution</h1>
         </div>
       </div>
     </div>
-  </div>          
+  </div>
 </section>
 
 <div class="deep-sea flip open relative z-index-9">
