@@ -13,6 +13,10 @@ $window.on('load', function(){
     $body.removeClass('load');
     setNiceScroll();
 
+    setTimeout(function() {
+      $loader.find('p').hide();
+    }, 1000);
+
     $loader.animate({
       height: 0
     }, 1600, 'easeInOutCubic', function(){
