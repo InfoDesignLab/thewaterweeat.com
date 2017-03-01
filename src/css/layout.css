@@ -398,6 +398,7 @@ footer {display:block; }
 #house .fixed .content p{
   margin-top: 8%;
   float: left;
+  width: 33%;
 }
 
 #house .cover {
