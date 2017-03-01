@@ -6,20 +6,16 @@ var langs = {
   'no': 'Norwegian',
 };
 
+var domainComponents = window.location.host.split('.');
 var subdomain, maindomain;
 
-if (/\./.test(window.location.host)) {
-  var domainComponents = window.location.host.split('.')
-  subdomain = domainComponents[0]
+if (Object.keys(langs).indexOf(domainComponents[0]) !== -1) {
+  subdomain = domainComponents[0];
   maindomain = domainComponents.slice(1).join('.')
-} else {
-  maindomain = window.location.host;
-}
-
-if (Object.keys(langs).indexOf(subdomain) !== -1) {
   i18n.locale = subdomain;
 } else {
   i18n.locale = 'en';
+  maindomain = window.location.host;
 }
 
 if (!/^en/.test(i18n.locale)) {
