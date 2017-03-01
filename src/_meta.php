@@ -7,7 +7,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="http://www.angelamorelli.com/water/thumb.jpg"/>
 <meta property="og:url" content="http://www.angelamorelli.com/water"/>
-<meta property="og:description" content="Discover how much WATER we EAT everyday">    
+<meta property="og:description" content="Discover how much WATER we EAT everyday">
 <script src="js/html5/prefixfree.js"></script>
 <link rel="shortcut icon" href="favicon.ico" />
 <link type="text/css" rel="stylesheet" href='http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic' />
