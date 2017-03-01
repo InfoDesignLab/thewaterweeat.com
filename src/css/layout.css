@@ -138,6 +138,12 @@ footer {display:block; }
 
 /*INTRO*/
 
+#lang-selector {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
+
 #intro{
   position: relative;
   height: 90%;

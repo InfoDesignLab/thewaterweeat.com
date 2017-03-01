@@ -42,6 +42,7 @@ $is_old = $browser['name'] == 'msie' && $browser['version'] < 9;
     </div>
 
     <script src="js/html5/html5shim.js"></script>
+    <script src="js/html5/objectkeys.js"></script>
     <script src="js/html5/respond.min.js"></script>
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/jquery/jquery.easing.js"></script>
