@@ -8,7 +8,7 @@
           <img src="images/discover-cow.jpg" alt="Cow" img-width="737" img-height="679" />
         </div>
         <div class="right col-33">
-          <p data-i18n>In an industrial beef production<br>system it takes on<br>average<b>three years</b> before the animal is<br>slaughtered to<br>produce about<br><b>200 kilos</b> of<br>boneless beef.</p>
+          <p data-i18n>In an industrial beef production<br>system it takes on<br>average <b>three years</b> before the animal is<br>slaughtered to<br>produce about<br><b>200 kilos</b> of<br>boneless beef.</p>
         </div>
         <div class="clear"></div>
       </div>
@@ -64,7 +64,7 @@
       </div>
 
       <div class="item end" style="margin-bottom: 0px;">
-        <p data-i18n class="txt-center">Therefore, <b>in total</b>, we need <b>3<span class="blank-point"></span>091<span class="blank-point"></span>000 litres</b> of water<br>for producing<b>200 kilos</b> of boneless beef.<br>This means that to produce 1 kilogram of boneless beef<br><b>we need</b></p>
+        <p data-i18n class="txt-center">Therefore, <b>in total</b>, we need <b>3<span class="blank-point"></span>091<span class="blank-point"></span>000 litres</b> of water<br>for producing <b>200 kilos</b> of boneless beef.<br>This means that to produce 1 kilogram of boneless beef<br><b>we need</b></p>
       </div>
 
       <div class="item" style="margin: 60px 0px 40px 0px;">

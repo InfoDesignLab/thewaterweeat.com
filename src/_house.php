@@ -10,7 +10,7 @@
 
   <div class="cover fixed bg-gray z-index-1 flickering">
     <div class="content">
-      <p data-i18n>Much of the water<br>we use is obvious<br>it's<b>visible</b>in our<br>homes.</p>
+      <p data-i18n>Much of the water<br>we use is obvious<br>it's <b>visible</b> in our<br>homes.</p>
     </div>
   </div>
 </section>

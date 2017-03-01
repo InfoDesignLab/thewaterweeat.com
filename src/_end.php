@@ -1,15 +1,11 @@
 <section id="the-end" class="bg-gray z-index-9">
   <div class="content">
 
-    <p class="txt-justify">            
-      The good news is that each one of us can also make the<br/>
-      world a little more water secure, ready to face the needs of<br/>
-      our peak population future. How?
-    </p>
+    <p data-i18n class="txt-justify">The good news is that each one of us can also make the<br>world a little more water secure, ready to face the needs of<br>our peak population future. How?</p>
     <br/>
     <p class="txt-center">
       <br/>
-      <b>The answer lies in our shopping baskets.</b>
+      <b data-i18n>The answer lies in our shopping baskets.</b>
     </p>
 
     <div class="suggestion" style="padding-top: 90px;">
@@ -17,14 +13,7 @@
         <img src="images/suggest-circle-bg.png" alt="" class="bg"/>
         <img src="images/suggest-grains.png" alt="Suggestion grains" class="image"/>
       </div>
-      <p>
-        The amount of meat in our diet is crucial!
-        The average daily water consumption of a meat-eating person is 5<span class="blank-point"></span>000 litres of 
-        water per day. The average for a vegetarian is 2<span class="blank-point"></span>500 litres. In countries where 
-        there is a culture of heavy meat consumption, the advice is: <b>one meat-free-day 
-          a week!</b> Every little bit helps. 
-      </p> 
-
+      <p>The amount of meat in our diet is crucial! The average daily water consumption of a meat-eating person is 5<span class="blank-point"></span>000 litres of water per day. The average for a vegetarian is 2<span class="blank-point"></span>500 litres. In countries where there is a culture of heavy meat consumption, the advice is: <b>one meat-free-day a week!</b> Every little bit helps.</p>
     </div>
 
     <div class="suggestion">
@@ -34,11 +23,11 @@
       </div>
       <p>
         The type of meat we consume is crucial!
-        <b>Choose meat raised on grass if you can</b>. It is normally a more sensible use of water resources, 
+        <b>Choose meat raised on grass if you can</b>. It is normally a more sensible use of water resources,
         since the land often cannot be used for highly productive crop production. Meat from sheep
-        almost always falls into this category. Agri-corporations and supermarkets do not generally 
+        almost always falls into this category. Agri-corporations and supermarkets do not generally
         fit the grass-fed livestock model. Cheap meat is usually fed on grain, corn-fed beef is the problem.
-      </p> 
+      </p>
 
     </div>
 
@@ -56,7 +45,7 @@
         food. It would be wise to consider whether we should be
         producing and buying that food in the first place, <b>so please,
           do not waste!</b>
-      </p> 
+      </p>
     </div>
 
     <div class="not-forget">
