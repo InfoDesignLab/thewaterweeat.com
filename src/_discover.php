@@ -45,7 +45,7 @@
 
       <div class="item bar-item" id="drinking">
         <div class="left col-33">
-          <p data-i18n>We need to take<br>into account also<br><b>24<span class="blank-point"></span>000 litres</b> of<br>water that the cow drinksduring the<br>three years</p>
+          <p data-i18n>We need to take<br>into account also<br><b>24<span class="blank-point"></span>000 litres</b> of<br>water that the cow drinks during the<br>three years</p>
         </div>
         <div class="right litres drinking">
           <img src="images/discover-drinking.png" alt="Drinking"/>
