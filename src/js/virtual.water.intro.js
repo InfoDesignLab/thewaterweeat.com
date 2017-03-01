@@ -1,10 +1,6 @@
 /*INIT*/
 
 $window.on('load', function(){
-  if (!$.browser.webkit){
-    $loader.find('p').fadeOut();
-  }
-
   if ($.browser.opera){
     $('.wave, .wave-top, .wave-bottom').css({'-o-animation': 'none', 'background-position' : '0px 0px'});
   }
@@ -12,10 +8,6 @@ $window.on('load', function(){
   $loader.find('.load-image').fadeOut('slow', function(){
     $body.removeClass('load');
     setNiceScroll();
-
-    setTimeout(function() {
-      $loader.find('p').hide();
-    }, 1000);
 
     $loader.animate({
       height: 0

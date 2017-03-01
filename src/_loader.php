@@ -1,6 +1,5 @@
 <div id="loader">
   <div class="wave"></div>
-  <p class="txt-center">What if I told you:</p>
   <img src="images/loader.gif" alt="" class="load-image"/>
   <div class="bg-blue"></div>
   <div class="obsolete">
