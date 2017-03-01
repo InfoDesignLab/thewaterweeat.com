@@ -3,6 +3,7 @@ var i18n = $.i18n();
 var langs = {
   'en': 'English',
   'it': 'Italian',
+  'no': 'Norwegian',
 };
 
 var subdomain, maindomain;
