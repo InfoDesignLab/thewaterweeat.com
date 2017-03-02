@@ -87,6 +87,12 @@ footer {display:block; }
   height: 100%;
 }
 
+/* fixes firefox side scroll issue, but would break opera, so we apply it only to firefox */
+@-moz-document url-prefix() {
+  .main .deep-sea {
+    margin-top: -1px;
+  }
+}
 
 /*LOADER*/
 
