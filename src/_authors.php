@@ -8,6 +8,7 @@
   <br/><br/>
   By <b><a href="https://infodesignlab.com/" target="_blank">InfoDesignLab</a></b><br/>
   Sources: <b><a href="http://www.waterfootprint.org" target="_blank">Water Footprint Network</a>, <a href=" http://www.amazon.co.uk/Virtual-Water-Tackling-Precious-Resource/dp/1845119843" target="_blank">Virtual Water by Tony Allan</a></b><br/>
+  <span id="translated-by"></span>
   <br/>
   <?php $browser = getBrowser(); ?>
   <?php $is_old = $browser['name'] == 'msie' && $browser['version'] < 9; ?>
