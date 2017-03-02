@@ -60,7 +60,6 @@ $is_old = $browser['name'] == 'msie' && $browser['version'] < 9;
     <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.emitter.js"></script>
     <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.language.js"></script>
     <script src="<?php echo PREFIX ?>js/virtual.water.init.js"></script>
-    <script src="<?php echo PREFIX ?>js/virtual.water.i18n.js"></script>
 
     <?php if($is_old || isMobileDevice()): ?>
       <script src="<?php echo PREFIX ?>js/virtual.water.static.js"></script>

@@ -1,4 +1,5 @@
 <script src="<?php echo PREFIX ?>js/svg/raphael.min.js"></script>
+<script src="<?php echo PREFIX ?>js/virtual.water.i18n.js"></script>
 <script src="<?php echo PREFIX ?>js/virtual.water.intro.js"></script>
 <script src="<?php echo PREFIX ?>js/virtual.water.house.js"></script>
 <script src="<?php echo PREFIX ?>js/virtual.water.flickering.js"></script>
