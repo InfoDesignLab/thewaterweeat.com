@@ -1,1 +1,1 @@
-<?php include_once("../index.php") ?>
+<?php define('PREFIX', '../'); include_once('../index.php') ?>

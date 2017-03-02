@@ -1,7 +1,7 @@
 <p class="txt-left" style="font-size: 16px;line-height: 34px;">
   <b>
     <a href="download/thewaterweeat.jpg" download="" target="_blank" style="color: #fff">
-      <img src="images/share-download.png" alt="Download" style="width:50px;vertical-align: middle;margin-right: 5px;"/>
+      <img src="<?php echo PREFIX ?>images/share-download.png" alt="Download" style="width:50px;vertical-align: middle;margin-right: 5px;"/>
       Download the infographic story as a jpg
     </a>
   </b>

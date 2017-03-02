@@ -5,7 +5,7 @@
     <div class="graph">
       <div class="item" style="margin-left: 69px">
         <div class="ico">
-          <img src="images/graphic-ico-coffee.png" alt="Coffee" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-coffee.png" alt="Coffee" />
           <span>coffee</span><br/>
           <span class="number">18<span class="blank-point"></span>900</span>
         </div>
@@ -13,7 +13,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-beef.png" alt="Beef" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-beef.png" alt="Beef" />
           <span>beef</span><br/>
           <span class="number">15<span class="blank-point"></span>400</span>
         </div>
@@ -21,7 +21,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-sheep.png" alt="Sheep" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-sheep.png" alt="Sheep" />
           <span>sheep</span><br/>
           <span class="number">10<span class="blank-point"></span>400</span>
         </div>
@@ -29,7 +29,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-pork.png" alt="Pork" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-pork.png" alt="Pork" />
           <span>pork</span><br/>
           <span class="number">6<span class="blank-point"></span>000</span>
         </div>
@@ -37,7 +37,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-goat.png" alt="Goat" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-goat.png" alt="Goat" />
           <span>goat</span><br/>
           <span class="number">5<span class="blank-point"></span>500</span>
         </div>
@@ -45,7 +45,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-chicken.png" alt="Chicken" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-chicken.png" alt="Chicken" />
           <span>chicken</span><br/>
           <span class="number">4<span class="blank-point"></span>300</span>
         </div>
@@ -53,7 +53,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-cheese.png" alt="Cheese" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-cheese.png" alt="Cheese" />
           <span>cheese</span><br/>
           <span class="number">3<span class="blank-point"></span>180</span>
         </div>
@@ -61,7 +61,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-rice.png" alt="Rice" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-rice.png" alt="Rice" />
           <span>rice</span><br/>
           <span class="number">2<span class="blank-point"></span>500</span>
         </div>
@@ -69,7 +69,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-soyabeans.png" alt="Soyabeans" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-soyabeans.png" alt="Soyabeans" />
           <span>soyabeans</span><br/>
           <span class="number">2<span class="blank-point"></span>145</span>
         </div>
@@ -77,7 +77,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-wheat.png" alt="Wheat" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-wheat.png" alt="Wheat" />
           <span>wheat</span><br/>
           <span class="number">1<span class="blank-point"></span>830</span>
         </div>
@@ -85,7 +85,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-sugar.png" alt="Sugar" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-sugar.png" alt="Sugar" />
           <span>sugar</span><br/>
           <span class="number">1<span class="blank-point"></span>780</span>
         </div>
@@ -93,7 +93,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-barley.png" alt="Barley" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-barley.png" alt="Barley" />
           <span>barley</span><br/>
           <span class="number">1<span class="blank-point"></span>425</span>
         </div>
@@ -101,7 +101,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-maize.png" alt="Maize" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-maize.png" alt="Maize" />
           <span>maize</span><br/>
           <span class="number">1<span class="blank-point"></span>220</span>
         </div>
@@ -109,7 +109,7 @@
       </div>
       <div class="item">
         <div class="ico">
-          <img src="images/graphic-ico-apple.png" alt="Apple" />
+          <img src="<?php echo PREFIX ?>images/graphic-ico-apple.png" alt="Apple" />
           <span>apple</span><br/>
           <span class="number">822</span>
         </div>

@@ -6,20 +6,16 @@ var langs = {
   'no': 'Norwegian',
 };
 
-var domainComponents = window.location.host.split('.');
-var subdomain, maindomain;
-
-if (Object.keys(langs).indexOf(domainComponents[0]) !== -1) {
-  subdomain = domainComponents[0];
-  maindomain = domainComponents.slice(1).join('.')
-  i18n.locale = subdomain;
+var langFromPath = location.pathname.replace(/\//g, '')
+if (Object.keys(langs).indexOf(langFromPath) !== -1) {
+  i18n.locale = langFromPath;
 } else {
   i18n.locale = 'en';
-  maindomain = window.location.host;
 }
 
 if (!/^en/.test(i18n.locale)) {
-  i18n.load('i18n/' + i18n.locale + '.json', i18n.locale).done(function(translations, status, request) {
+  var i18nPath = $('html').attr('i18npath');
+  i18n.load(i18nPath + i18n.locale + '.json', i18n.locale).done(function(translations, status, request) {
     $('body').i18n();
     $('[data-i18n-metres]').each(function() {
       $(this).html($.i18n('$1 METRES', $(this).data('i18n-metres')));
@@ -36,13 +32,13 @@ $(function() {
   $langSelector.on('change', function(event) {
     var intendedLang = $(this).val();
     if (intendedLang !== i18n.locale) {
-      var domain;
+      var path;
       if (intendedLang === 'en') {
-        domain = maindomain;
+        path = '/';
       } else {
-        domain = intendedLang + '.' + maindomain;
+        path = '/' + intendedLang + '/';
       }
-      window.location = location.protocol + '//' + domain + location.pathname;
+      window.location = location.protocol + '//' + location.host + path;
     }
   });
 })
