@@ -15,7 +15,6 @@ $is_old = $browser['name'] == 'msie' && $browser['version'] < 9;
       <link type="text/css" rel="stylesheet" href="<?php echo PREFIX ?>css/static.css" />
     <?php endif; ?>
     <link type="text/css" rel="stylesheet" href="<?php echo PREFIX ?>css/media-query.css" />
-    <?php include_tracker('UA-21936787-50') ?>
   </head>
   <body class="load">
     <?php include_once("analyticstracking.php") ?>
