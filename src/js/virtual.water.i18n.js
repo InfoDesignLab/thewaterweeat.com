@@ -26,7 +26,7 @@ if (!/^en/.test(i18n.locale)) {
 $(function() {
   var $langSelector = $('#lang-selector')
   $.each(langs, function(key, value) {
-    $langSelector.append($('<option>', { value: key }).text(value));
+    $langSelector.append($('<option>', { value: key, selected: key === i18n.locale }).text(value));
   });
 
   $langSelector.on('change', function(event) {
