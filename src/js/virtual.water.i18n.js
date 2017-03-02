@@ -19,7 +19,7 @@ if (!/^en/.test(i18n.locale)) {
     $('body').i18n();
     $('[data-i18n-metres]').each(function() {
       $(this).html($.i18n('$1 METRES', $(this).data('i18n-metres')));
-    })
+    });
   });
 }
 
