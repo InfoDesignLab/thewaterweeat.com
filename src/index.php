@@ -1,5 +1,8 @@
 <?php
-require 'biComposer/start.php';
+define('ROOT', realpath(dirname(__FILE__).'/'));
+define('WEB_DIR', ROOT.'/');
+require 'helper/helper.ua.php';
+require 'helper/helper.partial.php';
 $browser = getBrowser();
 $is_old = $browser['name'] == 'msie' && $browser['version'] < 9;
 ?>

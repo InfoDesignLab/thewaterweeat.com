@@ -1,5 +1,0 @@
-
-Options +FollowSymLinks
-RewriteEngine On
-# RewriteBase /
-RewriteRule  resize/(.*)x(.*)/r/(.*) biComposer/vendors/timthumb/timthumb.php?src=../../../uploads/$3&h=$2&w=$1&q=80
