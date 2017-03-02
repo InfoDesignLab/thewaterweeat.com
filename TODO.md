@@ -5,7 +5,6 @@
 
 # Maybe for later
 
-- change/re-design footer
-- Start using webpack, with https://github.com/webpack-contrib/html-loader
-- Stop using php?
+- Start using webpack for js/css files
+- Stop using PHP, make it a static site, with html partials via https://github.com/jantimon/html-webpack-plugin see: https://github.com/jantimon/html-webpack-plugin/tree/master/examples/custom-template
 - Add sitemap, use proper i18n sitemap https://webmasters.googleblog.com/2012/05/multilingual-and-multinational-site.html
