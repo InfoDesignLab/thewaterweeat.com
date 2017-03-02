@@ -429,6 +429,13 @@ footer {display:block; }
   box-shadow: 0px 0px 20px #CCC;
 }
 
+/* fixes firefox side scroll issue, but would break opera, so we apply it only to firefox */
+@-moz-document url-prefix() {
+  #stats {
+    overflow-x: hidden;
+  }
+}
+
 #stats .container{ position: relative; height: 100%; }
 #stats .container.fixed{
   position: fixed;
