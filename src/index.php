@@ -52,13 +52,6 @@ $is_old = $browser['name'] == 'msie' && $browser['version'] < 9;
     <script src="<?php echo PREFIX ?>js/jquery/jquery.easing.js"></script>
     <script src="<?php echo PREFIX ?>js/jquery/jquery.nicescroll.js"></script>
     <script src="<?php echo PREFIX ?>js/jquery/jquery.inview.js"></script>
-    <script src="<?php echo PREFIX ?>js/jquery/CLDRPluralRuleParser.js"></script>
-    <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.js"></script>
-    <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.messagestore.js"></script>
-    <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.fallbacks.js"></script>
-    <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.parser.js"></script>
-    <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.emitter.js"></script>
-    <script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.language.js"></script>
     <script src="<?php echo PREFIX ?>js/virtual.water.init.js"></script>
 
     <?php if($is_old || isMobileDevice()): ?>

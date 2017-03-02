@@ -1,4 +1,11 @@
 <script src="<?php echo PREFIX ?>js/svg/raphael.min.js"></script>
+<script src="<?php echo PREFIX ?>js/jquery/CLDRPluralRuleParser.js"></script>
+<script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.js"></script>
+<script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.messagestore.js"></script>
+<script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.fallbacks.js"></script>
+<script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.parser.js"></script>
+<script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.emitter.js"></script>
+<script src="<?php echo PREFIX ?>js/jquery/jquery.i18n.language.js"></script>
 <script src="<?php echo PREFIX ?>js/virtual.water.i18n.js"></script>
 <script src="<?php echo PREFIX ?>js/virtual.water.intro.js"></script>
 <script src="<?php echo PREFIX ?>js/virtual.water.house.js"></script>
