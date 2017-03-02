@@ -8,9 +8,11 @@ To add a new language, please follow these steps:
 
 3. Add the link annotation in `src/_meta.php`, eg: `<link rel="alternate" hreflang="es" href="http://waterweeat.com/es/" />`
 
-4. Add the translation json file in the `src/i18n` folder, eg: `src/i18n/es.json`
+4. Add the image version with the corresponding translation at eg: `src/download/thewaterweeat-es.jpg`. Note: Just copy the english version if the translated version is not ready yet.
 
-5. Test locally and deploy the new version
+5. Add the translation json file in the `src/i18n` folder, eg: `src/i18n/es.json`
+
+6. Test locally and deploy the new version
 
 Please note:
 

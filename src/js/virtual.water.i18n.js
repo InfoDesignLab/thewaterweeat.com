@@ -20,6 +20,7 @@ if (!/^en/.test(i18n.locale)) {
     $('[data-i18n-metres]').each(function() {
       $(this).html($.i18n('$1 METRES', $(this).data('i18n-metres')));
     });
+    $('#share-download-link').attr('href', $('#share-download-link').attr('href').replace(/\.jpg/, '-' + i18n.locale + '.jpg'));
     $('#translated-by').html('Translated by: <b>' + $.i18n('metadata-authors') + '</b><br/>');
   });
 }
