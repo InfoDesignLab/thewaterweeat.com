@@ -1,9 +1,9 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <meta name="viewport" content="width=1024, user-scalable=no"/>
-<title>Virtual Water - Discover how much WATER we EAT everyday</title>
+<title>The Water We Eat - Discover how much WATER we EAT everyday</title>
 <meta name="description" content="Discover how much WATER we EAT everyday"/>
-<meta property="og:title" content="Virtual Water"/>
+<meta property="og:title" content="The Water We Eat"/>
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="http://waterweeat.com/thumb.jpg"/>
 <meta property="og:url" content="http://waterweeat.com"/>
