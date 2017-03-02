@@ -31,7 +31,7 @@ nav,
 header,
 footer {display:block; }
 
-.blank-point{ margin-right: 4px;s }
+.blank-point{ margin-right: 4px; }
 
 
 .flickering{ visibility: hidden; }
