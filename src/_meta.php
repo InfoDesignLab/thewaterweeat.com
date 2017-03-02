@@ -9,7 +9,7 @@
 <meta property="og:url" content="http://waterweeat.com"/>
 <meta property="og:description" content="Discover how much WATER we EAT everyday">
 <script src="<?php echo PREFIX ?>js/html5/prefixfree.js"></script>
-<link rel="shortcut icon" href="favicon.ico" />
+<link rel="shortcut icon" href="<?php echo PREFIX ?>favicon.ico" />
 <link type="text/css" rel="stylesheet" href='http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic' />
 <link type="text/css" rel="stylesheet" href="<?php echo PREFIX ?>css/layout.css" />
 <link type="text/css" rel="stylesheet" href="<?php echo PREFIX ?>css/animations.css" />
