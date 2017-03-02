@@ -2,18 +2,21 @@
 
 This project contains source code for the waterweeat.com website.
 
-## Run locally
-
-```sh
-cd src
-php -S localhost:8000
-```
-
 ## Build
 
 ```
-./build.sh
+./build.sh [stealth]
 ```
+
+## Run locally
+
+```sh
+cd build & php -S localhost:8000
+```
+
+## Deploy
+
+Copy build folder contents to remote server
 
 ## Tech stack
 
