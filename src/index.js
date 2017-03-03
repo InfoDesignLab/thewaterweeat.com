@@ -1,6 +1,5 @@
 require('es6-promise').polyfill()
 require('./vendor/html5/prefixfree')
-require('./vendor/html5/html5shim.js')
 require('./vendor/html5/objectkeys.js')
 require('./vendor/jquery/jquery.easing.js')
 require('./vendor/jquery/jquery.nicescroll.js')
