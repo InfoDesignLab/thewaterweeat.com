@@ -12,16 +12,16 @@ npm install
 
 ```sh
 # for production:
-npm build
+npm run build
 
 # for development:
-npm devbuild
+npm run devbuild
 ```
 
 ## Run locally
 
 ```sh
-npm run webpack-server
+npm run start
 open http://localhost:8080/
 ```
 

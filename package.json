@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/InfoDesignLab/thewaterweeat.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "devbuild": "rm -rf dist/* && webpack",
     "build": "rm -rf dist/* && webpack -p"
   },
