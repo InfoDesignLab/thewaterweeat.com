@@ -2,7 +2,7 @@
 
 This project contains source code for the waterweeat.com website.
 
-## Build
+## Setup
 
 ```sh
 npm install
@@ -29,7 +29,7 @@ open http://localhost:8080/
 
 Copy dist folder contents to remote server
 
-## Tech stack
+# Tech stack
 
 - [jquery](https://github.com/jquery/jquery)
 - [jquery.easing](https://github.com/gdsmith/jquery.easing)
