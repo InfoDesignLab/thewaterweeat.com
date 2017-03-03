@@ -1,4 +1,4 @@
-$document.ready(function(){
+$(document).ready(function(){
   
   var $stats = $('#stats');
   var $statsReport = $('#stats .report');
@@ -22,9 +22,9 @@ $document.ready(function(){
     $statsReport.removeClass('z-index-1').addClass('z-index-3');
   }
   
-  $window.on('scroll', function(){
+  $(window).on('scroll', function(){
     
-    scrollTop = $window.scrollTop();
+    scrollTop = $(window).scrollTop();
     start = $stats.offset().top
     end = (start + $stats.height()) + $statsProgress.height() - $statsProgress.children().last().height()/2;
 

@@ -1,4 +1,4 @@
-$document.ready(function(){
+$(document).ready(function(){
   
   var $prediscover = $('#pre-discover');
   var $discover = $('#discover');
@@ -8,7 +8,7 @@ $document.ready(function(){
   var $firstBarItem = $discover.find('.item.bar-item:first');
   var $discoverEnd = $discover.find('.end');
   
-  $window.on('resize', function(){
+  $(window).on('resize', function(){
     
     $conceptsItems.each(function(i){        
       var $item = $(this);
@@ -18,8 +18,8 @@ $document.ready(function(){
         if ($item.find('.box').length > 0){
           
           var $img = $item.find('.box img');
-          var imgWidth = $window.width() > 1024 ? parseInt($img.attr('img-width')) + 80 : $item.find('.box').width() + 80;
-          var imgHeight = $window.width() > 1024 ? parseInt($img.attr('img-height')) + 80 : $item.find('.box').height() + 80;
+          var imgWidth = $(window).width() > 1024 ? parseInt($img.attr('img-width')) + 80 : $item.find('.box').width() + 80;
+          var imgHeight = $(window).width() > 1024 ? parseInt($img.attr('img-height')) + 80 : $item.find('.box').height() + 80;
 
           $img.css({
             width: imgWidth - 80,
@@ -33,13 +33,13 @@ $document.ready(function(){
     });   
   });
   
-  $window.on('scroll', function(){
+  $(window).on('scroll', function(){
     
-    var scrollTop = $window.scrollTop();
+    var scrollTop = $(window).scrollTop();
       
     $prediscover.find('p').each(function(){
       var $item = $(this);
-      if (scrollTop >= $item.offset().top - (($window.height()/2) + 325) && !$item.hasClass('show')){
+      if (scrollTop >= $item.offset().top - (($(window).height()/2) + 325) && !$item.hasClass('show')){
         $item.addClass('show').animate({
           paddingTop:0,
           opacity:1
@@ -47,16 +47,16 @@ $document.ready(function(){
       }
     });
       
-    if (scrollTop >= $discoverText.offset().top - (($window.height()/2) + 325) && !$discoverText.hasClass('show')){
+    if (scrollTop >= $discoverText.offset().top - (($(window).height()/2) + 325) && !$discoverText.hasClass('show')){
       $discoverText.addClass('show').animate({
         opacity:1
       },'slow', 'swing');
     }
       
     
-    if (scrollTop >= $discover.offset().top - $window.height()/2 && scrollTop < $discover.offset().top + $discover.height()){
+    if (scrollTop >= $discover.offset().top - $(window).height()/2 && scrollTop < $discover.offset().top + $discover.height()){
       
-      if (scrollTop >= $firstBarItem.offset().top - $window.height()/2 && scrollTop < $discoverEnd.offset().top - $discoverEnd.height()){
+      if (scrollTop >= $firstBarItem.offset().top - $(window).height()/2 && scrollTop < $discoverEnd.offset().top - $discoverEnd.height()){
         if(!$discoverBar.hasClass('show')){
           $discoverBar.addClass('show').animate({
             top: 0
@@ -75,7 +75,7 @@ $document.ready(function(){
         var id = $item.attr('id');
         var $barImage = $discoverBar.find('img[alt*=' + id + ']');
         
-        if (scrollTop >= $item.offset().top - ($window.height()/3 + 200) && !$item.hasClass('show')){
+        if (scrollTop >= $item.offset().top - ($(window).height()/3 + 200) && !$item.hasClass('show')){
 
           $item.addClass('show').find('p').animate({
             paddingTop: 0,
@@ -90,8 +90,8 @@ $document.ready(function(){
             
           if ($item.find('.box').length > 0){
             var $img = $item.find('.box img');
-            var imgWidth = $window.width() > 1024 ? parseInt($img.attr('img-width')) + 80 : $item.find('.box').width() + 80;
-            var imgHeight = $window.width() > 1024 ? parseInt($img.attr('img-height')) + 80 : $item.find('.box').height() + 80;
+            var imgWidth = $(window).width() > 1024 ? parseInt($img.attr('img-width')) + 80 : $item.find('.box').width() + 80;
+            var imgHeight = $(window).width() > 1024 ? parseInt($img.attr('img-height')) + 80 : $item.find('.box').height() + 80;
               
             $img.delay(400).animate({
               width: imgWidth,

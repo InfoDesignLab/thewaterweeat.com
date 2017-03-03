@@ -1,10 +1,3 @@
-var $document = $(document);
-var $window = $(window);
-var $afterIntroBlock = $('#after-intro');
-var $htmlBody = $('html, body');
-var $body = $($htmlBody[1]);
-var $loader = $('#loader');
-
 function setNiceScroll(){
 
   if ($.browser.msie && $.browser.version < 8){
@@ -37,19 +30,19 @@ function setNiceScroll(){
     conf['mousescrollstep'] = 0.5;
   }
 
-  $body.niceScroll(conf);
+  $('body').niceScroll(conf);
 }
 
 function removeNiceScroll(){
-  $body.getNiceScroll().remove();
+  $('body').getNiceScroll().remove();
 }
 
 function showNiceScroll(){
-  $body.getNiceScroll().show();
+  $('body').getNiceScroll().show();
 }
 
 function hideNiceScroll(){
-  $body.getNiceScroll().hide();
+  $('body').getNiceScroll().hide();
 }
 
 function bindInviewEvent($el){
@@ -64,4 +57,13 @@ function bindInviewEvent($el){
 
 function unbindInviewEvent($el){
   $el.unbind('inview');
+}
+
+module.exports = {
+  setNiceScroll,
+  removeNiceScroll,
+  showNiceScroll,
+  hideNiceScroll,
+  bindInviewEvent,
+  unbindInviewEvent,
 }

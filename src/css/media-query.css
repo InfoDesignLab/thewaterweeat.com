@@ -1,13 +1,101 @@
-@media (min-width: 0px) and (max-width: 1024px) { 
-  
- body{ overflow-x: hidden; }
-  
-  #intro .drop-graph{background:none;}
+@media (min-width: 0px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #intro .drop-graph {
+    background: none;
+  }
 
   #discover .box.grains,
   #discover .box.hay,
-  #discover .box.cow{
+  #discover .box.cow {
     left: 60px;
   }
-  
+}
+
+html,body,#after-intro{ height: 100%; }
+
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: 'Noticia Text', serif;
+  /*background: #fff;*/
+  color: #00aced;
+}
+
+body.load{ overflow: hidden;}
+body.load .main{ display: none; }
+
+p{
+  font-size: 34px;
+  line-height: 52px;
+  margin: 0px;
+}
+
+a{
+  text-decoration: none;
+  outline: 0;
+  color: #97E3FF;
+}
+
+img{ border:0px; }
+
+section,
+nav,
+header,
+footer {display:block; }
+
+.blank-point{ margin-right: 4px; }
+
+.flickering{ visibility: hidden; }
+.flickering.visible{ visibility: visible; }
+
+/*LOADER*/
+
+#loader{
+  position: fixed;
+  display: block;
+  left: 0px;
+  bottom: 0px; right: 0px;
+  z-index: 9999;
+  height: 110%;
+  color: white;
+  overflow: hidden;
+}
+
+#loader .wave{
+  position: absolute;
+  top: 0px;
+  right: 0px; left: 0px;
+  background: url(../images/blue-wave.png) repeat-x;
+  height: 54px;
+}
+
+#loader .bg-blue{
+  position: absolute;
+  top: 53px; left: 0px;
+  bottom: 0px; right: 0px;
+  background-color: #00ACED;
+}
+
+#loader .obsolete{
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  margin-top: -45px;
+  display: none;
+}
+
+
+#loader .load-image{
+  position: fixed;
+  top: 50%;left: 50%;
+  margin-top: -21px;
+  margin-left: -21px;
+  z-index: 9999;
 }

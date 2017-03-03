@@ -1,10 +1,6 @@
 var i18n = $.i18n();
 
-var langs = {
-  'en': 'English',
-  'it': 'Italian',
-  'no': 'Norwegian',
-};
+var langs = require('./langs.js')
 
 var langFromPath = location.pathname.replace(/\//g, '')
 if (Object.keys(langs).indexOf(langFromPath) !== -1) {
@@ -14,8 +10,7 @@ if (Object.keys(langs).indexOf(langFromPath) !== -1) {
 }
 
 if (!/^en/.test(i18n.locale)) {
-  var i18nPath = $('html').attr('i18npath');
-  i18n.load(i18nPath + i18n.locale + '.json', i18n.locale).done(function(translations, status, request) {
+  i18n.load(JSON.parse($('#translation').html()), i18n.locale).done(function(translations, status, request) {
     $('body').i18n();
     $('[data-i18n-metres]').each(function() {
       $(this).html($.i18n('$1 METRES', $(this).data('i18n-metres')));

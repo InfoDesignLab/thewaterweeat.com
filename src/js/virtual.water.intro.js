@@ -1,23 +1,26 @@
 /*INIT*/
+var { setNiceScroll, showNiceScroll, hideNiceScroll } = require('./virtual.water.init.js')
 
-$window.on('load', function(){
+var $htmlBody = $('html,body');
+
+$(window).on('load', function(){
   if ($.browser.opera){
     $('.wave, .wave-top, .wave-bottom').css({'-o-animation': 'none', 'background-position' : '0px 0px'});
   }
 
-  $loader.find('.load-image').fadeOut('slow', function(){
-    $body.removeClass('load');
+  $('#loader').find('.load-image').fadeOut('slow', function(){
+    $('body').removeClass('load');
     setNiceScroll();
 
-    $loader.animate({
+    $('#loader').animate({
       height: 0
     }, 1600, 'easeInOutCubic', function(){
-      $loader.remove();
+      $('#loader').remove();
     });
   });
 });
 
-$document.ready(function(){
+$(document).ready(function(){
 
   var totalDropRows = 3520 / 40;
 
@@ -48,7 +51,7 @@ $document.ready(function(){
     }
 
     $dropRows = $('.drops-row');
-    $window.bind('scroll', onIntroScrollEvent);
+    $(window).bind('scroll', onIntroScrollEvent);
   }
 
   function showDropsCounter(){
@@ -140,10 +143,10 @@ $document.ready(function(){
           $htmlBody.scrollTop($dropsCounter.offset().top - 165);
           showNiceScroll();
 
-          $window.on('scroll', function(){
+          $(window).on('scroll', function(){
             $dropsParagraph.find('p').each(function(i){
               var $p = $(this);
-              if ($p.offset().top <= $window.scrollTop() + ($window.height()/2) + 400 && !$p.hasClass('show')){
+              if ($p.offset().top <= $(window).scrollTop() + ($(window).height()/2) + 400 && !$p.hasClass('show')){
                 $p.addClass('show').animate({
                   paddingTop:0,
                   opacity: 1
@@ -151,7 +154,7 @@ $document.ready(function(){
               }
             });
 
-            if ($dropsParagraph.find('.solution').offset().top <= $window.scrollTop() + ($window.height()/2) + 250 && !$dropsParagraph.find('.solution').hasClass('show')){
+            if ($dropsParagraph.find('.solution').offset().top <= $(window).scrollTop() + ($(window).height()/2) + 250 && !$dropsParagraph.find('.solution').hasClass('show')){
               $dropsParagraph.find('.solution').addClass('show').animate({
                 opacity:1
               });
@@ -170,16 +173,16 @@ $document.ready(function(){
 
   function onIntroScrollEvent(){
 
-    var scrollTop = $window.scrollTop();
+    var scrollTop = $(window).scrollTop();
     x = $dropsCounter.offset().top - 180
 
-    if (scrollTop >= $dropsContainer.offset().top - ($window.height()/3) && scrollTop < $dropsContainer.offset().top + $dropsContainer.height()){
+    if (scrollTop >= $dropsContainer.offset().top - ($(window).height()/3) && scrollTop < $dropsContainer.offset().top + $dropsContainer.height()){
 
       $dropRows.each(function(i){
 
         var $row = $(this);
 
-        if ($row.offset().top <= scrollTop + ($window.height()/3) && !$row.hasClass('show')){
+        if ($row.offset().top <= scrollTop + ($(window).height()/3) && !$row.hasClass('show')){
           $row.addClass('show');
           $row.find('.litre').addClass('show');
           $row.find('.blue-bg').addClass('show');

@@ -4,19 +4,30 @@ This project contains source code for the waterweeat.com website.
 
 ## Build
 
+```sh
+npm install
 ```
-./build.sh [stealth]
+
+## Build
+
+```sh
+# for production:
+npm build
+
+# for development:
+npm devbuild
 ```
 
 ## Run locally
 
 ```sh
-cd build & php -S localhost:8000
+npm run webpack-server
+open http://localhost:8080/
 ```
 
 ## Deploy
 
-Copy build folder contents to remote server
+Copy dist folder contents to remote server
 
 ## Tech stack
 

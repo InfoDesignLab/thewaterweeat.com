@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    ${require('html-loader?interpolate&attrs=link:href!./meta.html')}
+  </head>
+  <body class="load">
+    ${require('html-loader?interpolate!./main.html')}
+    <script type="application/json" id="translation">
+      ${require('text-loader!./i18n/it.json')}
+    </script>
+  </body>
+</html>

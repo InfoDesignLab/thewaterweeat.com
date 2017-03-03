@@ -1,3 +1,6 @@
 README.DEV.MD
 build
 deploy.sh
+node_modules
+dist
+npm-debug.log
