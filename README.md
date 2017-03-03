@@ -39,6 +39,7 @@ Copy dist folder contents to remote server
 
 ### Shims/Utils
 
+- [es6-promise](https://github.com/stefanpenner/es6-promise)
 - [prefixfree](https://github.com/LeaVerou/prefixfree)
 - [html5shim](https://github.com/jonathantneal/html5shim)
 - [respond](https://github.com/scottjehl/Respond)
