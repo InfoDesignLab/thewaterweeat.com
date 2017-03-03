@@ -29,10 +29,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('css/styles.css'),
+    new ExtractTextPlugin('css/styles-[contenthash:6].css'),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '.htaccess',
+      template: './src/.htaccess',
+      inject: false
     }),
     new HtmlWebpackPlugin({
       filename: 'robots.txt',
