@@ -1,18 +1,18 @@
-$document.ready(function(){
+$(document).ready(function(){
   
   var $suggestion = $('#the-end .suggestion');
   var $notForget = $('#the-end .not-forget');
   var $diet = $('#the-end .diet');
   
-  $window.on('scroll', function(){
+  $(window).on('scroll', function(){
     
-    var scrollTop = $window.scrollTop();
+    var scrollTop = $(window).scrollTop();
     
     $suggestion.each(function(index){
       
       var $suggest = $(this);
       
-      if (scrollTop >= $suggest.offset().top - ($window.height()/2) && !$suggest.hasClass('show')){
+      if (scrollTop >= $suggest.offset().top - ($(window).height()/2) && !$suggest.hasClass('show')){
         
         $suggest.addClass('show');
         
@@ -33,7 +33,7 @@ $document.ready(function(){
       }      
     });
         
-    if(scrollTop >= $notForget.offset().top - ($window.height()/2) && !$notForget.hasClass('show')){
+    if(scrollTop >= $notForget.offset().top - ($(window).height()/2) && !$notForget.hasClass('show')){
       $notForget.addClass('show');
       
       $notForget.find('p').animate({
