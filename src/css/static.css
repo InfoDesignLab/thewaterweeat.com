@@ -26,7 +26,7 @@ a{outline:0;}
 /*********/
 #static-intro{ position: relative; }
 #static-intro .container{
-  position: relative;  
+  position: relative;
   height: 360px;
   padding-top: 10%;
   background: #fff url(../static/virtual-static-01.gif) no-repeat center center;
@@ -162,24 +162,24 @@ a{outline:0;}
 /*********/
 #static-end{ position: relative; }
 #static-end .first-part{
-  position: relative; 
+  position: relative;
   height: 1029px;
   background: #fbf9f5 url(../static/virtual-static-16.gif) no-repeat top center;
 }
 #static-end .second-part{
-  position: relative; 
+  position: relative;
   height: 774px;
   background: #fbf9f5 url(../static/virtual-static-17.gif) no-repeat top center;
 }
 #static-end .third-part{
-  position: relative; 
+  position: relative;
   height: 1725px;
   background: #fbf9f5 url(../static/virtual-static-18.gif) no-repeat top center;
 }
 
 /*********/
-#static-share{ 
-  position: relative; 
+#static-share{
+  position: relative;
   background: #fbf9f5;
   height: 220px;
 }
@@ -221,6 +221,6 @@ a{outline:0;}
   height: 460px;
   background-color: #04b5ef;
   color: #fff;
-  
+
 }
 #static-credits .static-wave.top{ background-color: #fbf9f5; }

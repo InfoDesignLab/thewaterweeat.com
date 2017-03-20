@@ -10,9 +10,17 @@ var badIE = window.attachEvent && !window.addEventListener;
 var mobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 if (badIE || mobileDevice) {
   // no need for a breakpoint here, as there's little extra KB.
-  require('./css/static.css');
-  $('.main').append(require('./_static.html'));
-  require('./js/virtual.water.static.js')
+  require.ensure([], function() {
+    var langs = require('./js/langs.js')
+    var langFromPath = location.pathname.replace(/\//g, '')
+    if (Object.keys(langs).indexOf(langFromPath) !== -1) {
+      require('./css/static-' + langFromPath + '.css');
+    } else {
+      require('./css/static.css');
+    }
+    $('.main').append(require('./_static.html'));
+    require('./js/virtual.water.static.js')
+  }, 'static');
 } else {
   require.ensure([], function() {
     require('./css/layout.css');
@@ -38,5 +46,5 @@ if (badIE || mobileDevice) {
     require('./js/virtual.water.bottles.js');
     require('./js/virtual.water.graph.js');
     require('./js/virtual.water.end.js');
-  }, 'dynamic')
+  }, 'dynamic');
 }

@@ -26,7 +26,9 @@ To add a new language, please follow these steps:
 </html>
 ```
 
-6. Test locally and deploy the new version
+6. Add a `src/css/static-es.css` pointing to the images in the corresponding language, and also add those images to the project, eg: `src/static/virtual-static-01-es.gif`
+
+7. Test locally and deploy the new version
 
 ## Please note:
 
