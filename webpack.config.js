@@ -24,7 +24,7 @@ module.exports = {
       { test: /\.ico$/i, loader: 'file-loader?name=[name].[ext]' },
       { test: /images\/.+\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?name=images/[name]-[hash:6].[ext]' },
       { test: /static\/.+\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?name=static/[name]-[hash:6].[ext]' },
-      { test: /download\/.+\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?name=download/[name]-[hash:6].[ext]' },
+      { test: /download\/.+\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?name=download/[name]-[hash:6].[ext]' }, // XXX: not working
       { test: /thumb\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?name=[name].[ext]' },
     ]
   },

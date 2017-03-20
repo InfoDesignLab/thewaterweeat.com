@@ -13,6 +13,7 @@ npm install
 ```sh
 # for production:
 npm run build
+cp -r src/download dist/
 
 # for development:
 npm run devbuild
