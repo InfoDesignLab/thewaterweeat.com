@@ -19,6 +19,7 @@ if (badIE || mobileDevice) {
       require('./css/static.css');
     }
     $('.main').append(require('./_static.html'));
+    require('./js/virtual.water.i18n.js');
     require('./js/virtual.water.static.js')
   }, 'static');
 } else {
