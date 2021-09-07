@@ -30,5 +30,8 @@
     "text-loader": "0.0.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "@crowdin/ota-client": "^0.3.0"
   }
 }
