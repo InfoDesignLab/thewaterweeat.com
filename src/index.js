@@ -13,7 +13,13 @@ if (badIE || mobileDevice) {
   require.ensure(
     [],
     function () {
-      require('./css/static.css');
+      var langs = [];
+      var langFromPath = location.pathname.replace(/\//g, '');
+      if (Object.keys(langs).indexOf(langFromPath) !== -1) {
+        require('./css/static-' + langFromPath + '.css');
+      } else {
+        require('./css/static.css');
+      }
       $('.main').append(require('./_static.html'));
       require('./js/virtual.water.i18n.js');
       require('./js/virtual.water.static.js');
