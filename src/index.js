@@ -13,14 +13,7 @@ if (badIE || mobileDevice) {
   require.ensure(
     [],
     function () {
-      var langs = Object.keys(require('./js/lang-map.js'));
-      console.log(langs);
-      var langFromPath = location.pathname.replace(/\//g, '');
-      if (Object.keys(langs).indexOf(langFromPath) !== -1) {
-        require('./css/static-' + langFromPath + '.css');
-      } else {
-        require('./css/static.css');
-      }
+      require('./css/static.css');
       $('.main').append(require('./_static.html'));
       require('./js/virtual.water.i18n.js');
       require('./js/virtual.water.static.js');

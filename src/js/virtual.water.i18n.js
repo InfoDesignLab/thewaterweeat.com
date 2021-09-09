@@ -1,6 +1,5 @@
 const otaClient = require('@crowdin/ota-client').default;
-const langMap = require('./lang-map.js');
-
+const { getCrowdinLanguages } = require('./api-crowdin.js');
 var i18n = $.i18n();
 var $langSelector = $('#lang-selector');
 
@@ -10,9 +9,7 @@ const translationFileName = '/translations.json';
 
 function composeLangSelect(langs) {
   $.each(langs, (_, value) => {
-    $langSelector.append(
-      $('<option>', { value: value, selected: value === i18n.locale }).text(langMap[value.split('-')[0]].name)
-    );
+    $langSelector.append($('<option>', { value: value.id, selected: value.id === i18n.locale }).text(value.name));
   });
 }
 
@@ -22,6 +19,12 @@ function switchLocale(locale) {
 
 async function getTranslation(locale) {
   return await client.getFileTranslations(translationFileName, locale).catch(error => console.log(error));
+}
+
+function calcLocale(langs) {
+  const browserLanguage = langs.find(lang => lang.twoLettersCode === i18n.options.locale);
+  if (!!browserLanguage) return browserLanguage.id;
+  else i18n.options.fallbackLocale;
 }
 
 function mountTranslation(translations, locale) {
@@ -40,17 +43,15 @@ function mountTranslation(translations, locale) {
   });
 }
 
-client
-  .listLanguages()
-  .then(langs => {
+getCrowdinLanguages()
+  .then(async langs => {
     i18n.languages = langs;
-    switchLocale(i18n.languages.includes(i18n.options.locale) ? i18n.options.locale : i18n.options.fallbackLocale);
+    switchLocale(calcLocale(langs));
     composeLangSelect(i18n.languages);
     return i18n.locale;
   })
   .then(async locale => await getTranslation(locale))
   .then(translations => mountTranslation(translations, i18n.locale))
-  // .then(async () => await getAllTranslations())
   .catch(error => console.error(error));
 
 $(function () {

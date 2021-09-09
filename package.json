@@ -32,6 +32,7 @@
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
+    "@crowdin/crowdin-api-client": "^1.11.7",
     "@crowdin/ota-client": "^0.3.0"
   }
 }
