@@ -3,7 +3,6 @@ require('./vendor/html5/prefixfree');
 require('./vendor/html5/objectkeys.js');
 require('./vendor/jquery/jquery.easing.js');
 require('./vendor/jquery/jquery.nicescroll.js');
-
 require('./css/media-query.css');
 
 var badIE = window.attachEvent && !window.addEventListener;
@@ -34,7 +33,6 @@ if (badIE || mobileDevice) {
       require('./css/animations.css');
       $('.main').append(require('./_dynamic.js'));
       require('./vendor/jquery/jquery.inview.js');
-
       require('./vendor/jquery/CLDRPluralRuleParser.js');
       require('./vendor/jquery/jquery.i18n.js');
       require('./vendor/jquery/jquery.i18n.messagestore.js');

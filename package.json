@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "devbuild": "rm -rf dist/* && webpack",
-    "build": "rm -rf dist/* && webpack -p"
+    "build": "rm -rf dist/* && webpack"
   },
   "keywords": [],
   "author": "",
