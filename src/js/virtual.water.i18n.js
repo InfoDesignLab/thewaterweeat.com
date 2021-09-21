@@ -16,7 +16,9 @@ if (typeof $.i18n !== 'undefined') {
   }
 
   function switchLocale(locale) {
+    console.log(locale);
     i18n.locale = locale;
+    client.setCurrentLocale(locale);
   }
 
   async function getTranslation(locale) {
@@ -26,7 +28,7 @@ if (typeof $.i18n !== 'undefined') {
   function calcLocale(langs) {
     const browserLanguage = langs.find(lang => lang.twoLettersCode === i18n.options.locale);
     if (!!browserLanguage) return browserLanguage.id;
-    else i18n.options.fallbackLocale;
+    else return i18n.options.fallbackLocale;
   }
 
   function mountTranslation(translations, locale) {
@@ -49,7 +51,6 @@ if (typeof $.i18n !== 'undefined') {
     .then(async langs => {
       i18n.languages = langs;
       switchLocale(calcLocale(langs));
-      client.setCurrentLocale(i18n.locale);
       composeLangSelect(i18n.languages);
       return i18n.locale;
     })
